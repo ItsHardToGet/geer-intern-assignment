@@ -35,6 +35,7 @@ const authSchema = new mongoose.Schema({
     },
     mobile:{
         type :String,
+        match: /^[1-9][0-9]{9}$/,
         required:true
 
     },

@@ -45,7 +45,7 @@ const Register= async (req,res)=>{
      res.json({"err":0,"msg":"User registered successfully"})
     }
    catch(err){
-    res.send({"err":1,"msg":"enter unique email id for registration "});
+    res.send({"err":1,"msg":"enter valid email||phone details for registration "});
     console.log("err:",err);
    }
    
